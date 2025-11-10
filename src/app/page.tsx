@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen px-6 py-16">
@@ -7,12 +9,15 @@ export default function Home() {
       </p>
 
       <div className="mt-8 flex gap-4">
-        <a href="/how-it-works" className="rounded-xl px-5 py-3 bg-black text-white">
+        <Link href="/how-it-works" className="rounded-xl px-5 py-3 bg-black text-white">
           How it works
-        </a>
-        <a href="/hosts" className="rounded-xl px-5 py-3 border">
+        </Link>
+        <Link href="/hosts" className="rounded-xl px-5 py-3 border">
           Become a host
-        </a>
+        </Link>
+        <Link href="/demo/map" className="rounded-xl px-5 py-3 border">
+          Demo Map
+        </Link>
       </div>
     </main>
   );
